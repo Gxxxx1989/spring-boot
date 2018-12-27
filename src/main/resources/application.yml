@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: analysis
+  datasource: #数据源
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.155.56:6603/rising?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: rcuser
+    password: rcuser123
