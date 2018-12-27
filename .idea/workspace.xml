@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="030f902a-d9fb-40a2-8c36-9be0c07530de" name="Default Changelist" comment="springboot hello world">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/guoxi/controller/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/App.java" afterDir="false" />
+    <list default="true" id="030f902a-d9fb-40a2-8c36-9be0c07530de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,10 +85,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="46">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
                 <element signature="e#188#189#0" expanded="true" />
               </folding>
@@ -169,7 +163,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module&#10;repository&#10;directory" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545888393989" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545894948427" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -237,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545886873714</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="springboot">
+      <created>1545894572583</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545894572583</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -251,6 +252,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -296,7 +298,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea创建工程" />
     <MESSAGE value="springboot hello world" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot hello world" />
+    <MESSAGE value="springboot" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
@@ -309,6 +312,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -331,26 +348,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="46">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#164#165#0" expanded="true" />
             <element signature="e#188#189#0" expanded="true" />
           </folding>
