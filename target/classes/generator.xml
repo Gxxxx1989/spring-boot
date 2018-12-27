@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration [
+		<!ELEMENT generatorConfiguration (classPathEntry|context)*>
+		<!ELEMENT classPathEntry (#PCDATA)>
+		<!ATTLIST classPathEntry
+				location CDATA #REQUIRED>
+		<!ELEMENT context (commentGenerator|jdbcConnection|javaModelGenerator|sqlMapGenerator|javaClientGenerator|table)*>
+		<!ATTLIST context
+				id CDATA #REQUIRED
+				targetRuntime CDATA #REQUIRED>
+		<!ELEMENT commentGenerator (property)*>
+		<!ELEMENT property (#PCDATA)>
+		<!ATTLIST property
+				name CDATA #REQUIRED
+				value CDATA #REQUIRED>
+		<!ELEMENT jdbcConnection (#PCDATA)>
+		<!ATTLIST jdbcConnection
+				driverClass CDATA #REQUIRED
+				connectionURL CDATA #REQUIRED
+				userId CDATA #REQUIRED
+				password CDATA #REQUIRED>
+		<!ELEMENT javaModelGenerator (property)*>
+		<!ATTLIST javaModelGenerator
+				targetPackage CDATA #REQUIRED
+				targetProject CDATA #REQUIRED>
+		<!ELEMENT sqlMapGenerator (#PCDATA)>
+		<!ATTLIST sqlMapGenerator
+				targetPackage CDATA #REQUIRED
+				targetProject CDATA #REQUIRED>
+		<!ELEMENT javaClientGenerator (#PCDATA)>
+		<!ATTLIST javaClientGenerator
+				type CDATA #REQUIRED
+				targetPackage CDATA #REQUIRED
+				targetProject CDATA #REQUIRED>
+		<!ELEMENT table (#PCDATA)>
+		<!ATTLIST table
+				tableName CDATA #REQUIRED
+				domainObjectName CDATA #REQUIRED
+				enableCountByExample CDATA #REQUIRED
+				enableUpdateByExample CDATA #REQUIRED
+				enableDeleteByExample CDATA #REQUIRED
+				enableSelectByExample CDATA #REQUIRED
+				selectByExampleQueryId CDATA #REQUIRED>
+		]>
+<generatorConfiguration>
+
+	<!-- 数据库驱动包位置 -->
+    <classPathEntry location="C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-java-8.0.12.jar" />
+	<!-- <classPathEntry location="C:\oracle\product\10.2.0\db_1\jdbc\lib\ojdbc14.jar" />-->
+	<context id="DB2Tables" targetRuntime="MyBatis3">
+		<!-- optional，旨在创建class时，对注释进行控制 -->
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+		
+		<!-- 数据库链接URL、用户名、密码 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost/analysis?characterEncoding=utf8" userId="root" password="123456">
+
+		<!--<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@localhost:1521:orcl" userId="msa" password="msa">-->
+		</jdbcConnection>
+
+		<!--<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>  -->
+		
+		<!-- 生成模型的包名和位置 -->
+		 <javaModelGenerator targetPackage="com.guoxi.module.dao" targetProject="analysis">
+			<!-- 是否允许子包，即targetPackage.schemaName.tableName -->
+            <!--<property name="enableSubPackages" value="false"/>-->
+            <!-- 是否对类CHAR类型的列的数据进行trim操作 -->
+            <property name="trimStrings" value="true"/>
+            <!-- 建立的Model对象是否 不可改变  即生成的Model对象不会有 setter方法，只有构造方法 -->
+            <!--<property name="immutable" value="false"/>-->
+		</javaModelGenerator>
+		
+
+		<!-- 生成的映射文件包名和位置 -->
+	    <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="analysis/src/main/resources/">
+			<!--<property name="enableSubPackages" value="false" />-->
+		</sqlMapGenerator>
+		
+		<!-- 生成DAO的包名和位置 -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.guoxi.module.dao" targetProject="analysis">
+			<!--<property name="enableSubPackages" value="false" /> -->
+		</javaClientGenerator>
+
+		<!--<table tableName="cmm_app_t" domainObjectName="App" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />  -->
+		
+		<!--<table tableName="metric_unit_t" domainObjectName="Unit" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> -->
+
+		<!--<table tableName="metric_spec_t" domainObjectName="MetricSpec" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />-->
+		
+		<!-- <table tableName="metric_info_t" domainObjectName="Metric" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> -->
+		
+		<!-- <table tableName="alarm_rule_t" domainObjectName="AlarmRule" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />  -->
+		
+		<!--  <table tableName="thing_data_code_t" domainObjectName="Code" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />-->
+		
+		<!-- <table tableName="handle_level_t" domainObjectName="HandleLevel" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> -->
+		
+		<table tableName="analysis" domainObjectName="Analysis" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+
+	</context>
+</generatorConfiguration>
