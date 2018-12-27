@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="030f902a-d9fb-40a2-8c36-9be0c07530de" name="Default Changelist" comment="">
+    <list default="true" id="030f902a-d9fb-40a2-8c36-9be0c07530de" name="Default Changelist" comment="springboot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,7 +27,7 @@
           <entry key="iml" value="1" />
           <entry key="java" value="3" />
           <entry key="pom" value="2" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -35,13 +36,13 @@
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="3" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="5" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="286" />
+          <entry key="java" value="292" />
           <entry key="txt" value="60" />
           <entry key="xml" value="105" />
           <entry key="yml" value="110" />
@@ -49,7 +50,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="286" />
+          <entry key="JAVA" value="292" />
           <entry key="PLAIN_TEXT" value="60" />
           <entry key="XML" value="105" />
           <entry key="YAML" value="110" />
@@ -85,9 +86,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="138">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
                 <element signature="e#188#189#0" expanded="true" />
               </folding>
@@ -115,8 +117,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/guoxi/controller/controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java" />
       </list>
     </option>
   </component>
@@ -163,7 +165,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module&#10;repository&#10;directory" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545894948427" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545895704582" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -238,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545894572583</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="springboot">
+      <created>1545895029670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545895029670</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -259,8 +268,8 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49882904" visible="true" weight="0.17857143" />
+      <window_info id="Structure" order="1" sideWeight="0.50117093" side_tool="true" weight="0.17857143" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49946696" weight="0.32899022" />
       <window_info anchor="bottom" id="Terminal" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50053304" side_tool="true" weight="0.32899022" />
@@ -268,7 +277,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5363735" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5363735" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
@@ -348,11 +357,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/guoxi/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="138">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#164#165#0" expanded="true" />
             <element signature="e#188#189#0" expanded="true" />
           </folding>
