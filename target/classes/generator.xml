@@ -55,7 +55,7 @@
         </commentGenerator>
 		
 		<!-- 数据库链接URL、用户名、密码 -->
-		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost/analysis?characterEncoding=utf8" userId="root" password="123456">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/analysis?characterEncoding=utf8" userId="root" password="123456">
 
 		<!--<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@localhost:1521:orcl" userId="msa" password="msa">-->
 		</jdbcConnection>
@@ -85,20 +85,8 @@
 			<!--<property name="enableSubPackages" value="false" /> -->
 		</javaClientGenerator>
 
-		<!--<table tableName="cmm_app_t" domainObjectName="App" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />  -->
-		
-		<!--<table tableName="metric_unit_t" domainObjectName="Unit" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> -->
+		bleName="handle_level_t" domainObjectName="HandleLevel" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> -->
 
-		<!--<table tableName="metric_spec_t" domainObjectName="MetricSpec" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />-->
-		
-		<!-- <table tableName="metric_info_t" domainObjectName="Metric" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> -->
-		
-		<!-- <table tableName="alarm_rule_t" domainObjectName="AlarmRule" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />  -->
-		
-		<!--  <table tableName="thing_data_code_t" domainObjectName="Code" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />-->
-		
-		<!-- <table tableName="handle_level_t" domainObjectName="HandleLevel" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> -->
-		
 		<table tableName="analysis" domainObjectName="Analysis" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 
 	</context>
