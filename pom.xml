@@ -37,12 +37,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <!--mybatis逆向生成代码-->
-        <!--<dependency>-->
-            <!--<groupId>org.mybatis.generator</groupId>-->
-            <!--<artifactId>mybatis-generator-core</artifactId>-->
-            <!--<version>1.3.2</version>-->
-        <!--</dependency>-->
 
     </dependencies>
 
