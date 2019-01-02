@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.guoxi.module.dao.BidInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.guoxi.module.dao.BidInfo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="target_project" property="targetProject" jdbcType="VARCHAR" />
+    <result column="bid_section" property="bidSection" jdbcType="VARCHAR" />
+    <result column="region" property="region" jdbcType="VARCHAR" />
+    <result column="
+tendering_unit" property="
+tenderingUnit" jdbcType="VARCHAR" />
+    <result column="offer" property="offer" jdbcType="DOUBLE" />
+    <result column="cost" property="cost" jdbcType="DOUBLE" />
+    <result column="bid_evaluation_method" property="bidEvaluationMethod" jdbcType="VARCHAR" />
+    <result column="competitiveness" property="competitiveness" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, target_project, bid_section, region, 
+tendering_unit, offer, cost, bid_evaluation_method, 
+    competitiveness
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bid_info_t
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bid_info_t
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.guoxi.module.dao.BidInfo" >
+    insert into bid_info_t (id, target_project, bid_section, 
+      region, 
+tendering_unit, offer, 
+      cost, bid_evaluation_method, competitiveness
+      )
+    values (#{id,jdbcType=INTEGER}, #{targetProject,jdbcType=VARCHAR}, #{bidSection,jdbcType=VARCHAR}, 
+      #{region,jdbcType=VARCHAR}, #{
+tenderingUnit,jdbcType=VARCHAR}, #{offer,jdbcType=DOUBLE}, 
+      #{cost,jdbcType=DOUBLE}, #{bidEvaluationMethod,jdbcType=VARCHAR}, #{competitiveness,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.guoxi.module.dao.BidInfo" >
+    insert into bid_info_t
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="targetProject != null" >
+        target_project,
+      </if>
+      <if test="bidSection != null" >
+        bid_section,
+      </if>
+      <if test="region != null" >
+        region,
+      </if>
+      <if test="
+tenderingUnit != null" >
+        
+tendering_unit,
+      </if>
+      <if test="offer != null" >
+        offer,
+      </if>
+      <if test="cost != null" >
+        cost,
+      </if>
+      <if test="bidEvaluationMethod != null" >
+        bid_evaluation_method,
+      </if>
+      <if test="competitiveness != null" >
+        competitiveness,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="targetProject != null" >
+        #{targetProject,jdbcType=VARCHAR},
+      </if>
+      <if test="bidSection != null" >
+        #{bidSection,jdbcType=VARCHAR},
+      </if>
+      <if test="region != null" >
+        #{region,jdbcType=VARCHAR},
+      </if>
+      <if test="
+tenderingUnit != null" >
+        #{
+tenderingUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="offer != null" >
+        #{offer,jdbcType=DOUBLE},
+      </if>
+      <if test="cost != null" >
+        #{cost,jdbcType=DOUBLE},
+      </if>
+      <if test="bidEvaluationMethod != null" >
+        #{bidEvaluationMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="competitiveness != null" >
+        #{competitiveness,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.guoxi.module.dao.BidInfo" >
+    update bid_info_t
+    <set >
+      <if test="targetProject != null" >
+        target_project = #{targetProject,jdbcType=VARCHAR},
+      </if>
+      <if test="bidSection != null" >
+        bid_section = #{bidSection,jdbcType=VARCHAR},
+      </if>
+      <if test="region != null" >
+        region = #{region,jdbcType=VARCHAR},
+      </if>
+      <if test="
+tenderingUnit != null" >
+        
+tendering_unit = #{
+tenderingUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="offer != null" >
+        offer = #{offer,jdbcType=DOUBLE},
+      </if>
+      <if test="cost != null" >
+        cost = #{cost,jdbcType=DOUBLE},
+      </if>
+      <if test="bidEvaluationMethod != null" >
+        bid_evaluation_method = #{bidEvaluationMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="competitiveness != null" >
+        competitiveness = #{competitiveness,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.guoxi.module.dao.BidInfo" >
+    update bid_info_t
+    set target_project = #{targetProject,jdbcType=VARCHAR},
+      bid_section = #{bidSection,jdbcType=VARCHAR},
+      region = #{region,jdbcType=VARCHAR},
+      
+tendering_unit = #{
+tenderingUnit,jdbcType=VARCHAR},
+      offer = #{offer,jdbcType=DOUBLE},
+      cost = #{cost,jdbcType=DOUBLE},
+      bid_evaluation_method = #{bidEvaluationMethod,jdbcType=VARCHAR},
+      competitiveness = #{competitiveness,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

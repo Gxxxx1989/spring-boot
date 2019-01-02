@@ -38,7 +38,7 @@
         </javaClientGenerator>
 
         <!-- 相关表的配置 -->
-        <table tableName="analysis" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+        <table tableName="bid_info_t" domainObjectName="BidInfo" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false"/>
     </context>
 </generatorConfiguration>
