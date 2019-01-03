@@ -1,0 +1,108 @@
+
+
+
+body{
+
+	background:#fff url(../Source/01.gif) ;
+
+}
+
+.div_body{
+
+	width:1910px;
+
+	height:500px;
+
+}
+
+.div_bodyin{
+
+	    width: 403px;
+
+		margin: 0 auto;
+
+		position:relative;
+
+		margin-top:200px;
+
+		height: 375px;
+
+
+
+}
+
+.div_log{
+
+	width: 403px;
+
+	height:46px;
+
+	margin-bottom:25px;
+
+	background:#fff url(../Source/01.gif) ;
+
+}
+
+.div_login{
+
+	height:302px;
+
+	overflow:hidden;
+
+	font-size: 12px;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	padding: 28px 47px 20px 47px;
+
+	background:url(../Source/03.png) no-repeat;
+
+	color: #4f5d80;
+
+	font-weight: normal;
+
+}
+
+.txt_input{
+
+	width: 295px;
+
+    height: 36px;
+
+    border: 1px solid #cad2db;
+
+	font-size: 14px;
+
+    color: #717171;
+
+    font-family: Arial;
+
+	margin-bottom: 20px;
+
+	cursor: text;
+
+	border-radius: 5px;
+
+}
+
+.sub_button{
+
+	float: right;
+
+    width: 122px;
+
+    height: 32px;
+
+    background: url(../Source/04.png) no-repeat -153px -850px;
+
+    border: none;
+
+    color: #FFF;
+
+    padding-bottom: 2px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
