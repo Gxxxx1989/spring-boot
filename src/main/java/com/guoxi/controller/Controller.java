@@ -8,11 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 @org.springframework.stereotype.Controller
 
 public class Controller {
-    @RequestMapping("/login")
+    @RequestMapping(value = {"/","/login"})
     public String testHtml() {
-//        String userName=request.getParameter("user");
-//        String pwd=request.getParameter("pwd");
-//        System.out.println("userName:"+userName+"pwd:"+pwd);
         return "index.html";
+    }
+    @RequestMapping(value = "/user")
+    public String user(){
+        return "user.html";
     }
 }
