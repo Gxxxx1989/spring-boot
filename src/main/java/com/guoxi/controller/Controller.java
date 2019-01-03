@@ -13,7 +13,11 @@ public class Controller {
         return "index.html";
     }
     @RequestMapping(value = "/user")
-    public String user(){
+    public String user(HttpServletRequest request){
+        String userName=request.getParameter("user");
+        String pwd=request.getParameter("pwd");
+        System.out.println("user:"+userName);
+        System.out.println("pwd:"+pwd);
         return "user.html";
     }
 }
