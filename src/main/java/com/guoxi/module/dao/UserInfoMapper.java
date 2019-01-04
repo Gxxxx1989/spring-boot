@@ -1,7 +1,9 @@
 package com.guoxi.module.dao;
 
 import com.guoxi.module.dao.UserInfo;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface UserInfoMapper {
     int deleteByPrimaryKey(Integer id);
 

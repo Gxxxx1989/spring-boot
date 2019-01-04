@@ -1,7 +1,9 @@
 package com.guoxi.module.dao;
 
 import com.guoxi.module.dao.BidInfo;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface BidInfoMapper {
     int deleteByPrimaryKey(Integer id);
 
