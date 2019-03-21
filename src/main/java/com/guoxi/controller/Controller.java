@@ -1,18 +1,13 @@
 package com.guoxi.controller;
 
 import com.guoxi.module.dao.UserInfo;
-import com.guoxi.module.dao.UserInfoMapper;
 import com.guoxi.service.UserService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-
+@Api(value="controller",tags={"用户操作接口"})
 @org.springframework.stereotype.Controller
 public class Controller {
 
@@ -39,8 +34,16 @@ public class Controller {
 //    }
     @ApiOperation(value = "新增用户" , notes = "新增用户信息")
     @PostMapping(value = "/insert")
-    public int testSwagger2(UserInfo userInfo) {
+    @ResponseBody
+    public int insertUser(@RequestBody UserInfo userInfo) {
         return userService.insertUser(userInfo);
+    }
+
+    @ApiOperation(value = "查询用户" , notes = "查询用户信息")
+    @PostMapping(value = "/getUser")
+    @ResponseBody
+    public  UserInfo getUser(int id) {
+        return userService.getUserInfo(id);
     }
 
 }

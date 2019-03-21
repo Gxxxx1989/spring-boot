@@ -1,2 +1,11 @@
-E:\ideawork\analysis\src\main\java\main\App.java
-E:\ideawork\analysis\src\main\java\com\guoxi\controller\Controller.java
+E:\demo\spring-boot\src\main\java\com\guoxi\App.java
+E:\demo\spring-boot\src\main\java\com\guoxi\module\dao\AnalysisMapper.java
+E:\demo\spring-boot\src\main\java\com\guoxi\controller\Controller.java
+E:\demo\spring-boot\src\main\java\com\guoxi\module\dao\Analysis.java
+E:\demo\spring-boot\src\main\java\com\guoxi\module\dao\BidInfo.java
+E:\demo\spring-boot\src\main\java\com\guoxi\module\dao\UserInfo.java
+E:\demo\spring-boot\src\main\java\com\guoxi\module\dao\UserInfoMapper.java
+E:\demo\spring-boot\src\main\java\com\guoxi\service\UserService.java
+E:\demo\spring-boot\src\main\java\com\guoxi\service\impl\UserServiceImpl.java
+E:\demo\spring-boot\src\main\java\com\guoxi\module\dao\BidInfoMapper.java
+E:\demo\spring-boot\src\main\java\com\guoxi\swaggerconfig\SwaggerConfig.java

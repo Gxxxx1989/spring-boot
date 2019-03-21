@@ -4,7 +4,14 @@ spring:
   application:
     name: analysis
   datasource: #数据源
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/analysis?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 123456
+mybatis:
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapper-locations: classpath:mybatis/mapper/*Mapper.xml
+  # 配置类型别名
+  #type-aliases-package: com.guoxi.*.*
+  #mybatis配置
+  #config: classpath:mybatis.xml

@@ -1,2 +1,11 @@
+com\guoxi\module\dao\UserInfo.class
 com\guoxi\controller\Controller.class
-main\App.class
+com\guoxi\swaggerconfig\SwaggerConfig.class
+com\guoxi\module\dao\UserInfoMapper.class
+com\guoxi\module\dao\Analysis.class
+com\guoxi\App.class
+com\guoxi\service\UserService.class
+com\guoxi\module\dao\BidInfo.class
+com\guoxi\module\dao\BidInfoMapper.class
+com\guoxi\service\impl\UserServiceImpl.class
+com\guoxi\module\dao\AnalysisMapper.class

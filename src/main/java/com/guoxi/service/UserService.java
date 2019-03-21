@@ -8,5 +8,5 @@ public interface UserService {
 
     public int insertUser(UserInfo userInfo);
 
-    public String getUserInfo(String id);
+    public UserInfo getUserInfo(int id);
 }
